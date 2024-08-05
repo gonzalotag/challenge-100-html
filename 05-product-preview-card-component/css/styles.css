@@ -1,0 +1,119 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
+body{
+  font-size: 10px;
+}
+#window{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  align-items: center;
+}
+.card{
+  width: 400px;
+  height: 300px;
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+}
+#portada {
+  /* width: 50%; */
+  flex:50%;
+  background-image:url("./../images/image-product-desktop.jpg");
+  background-color: aquamarine;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 0 0 15px;
+}
+#content{
+  height: 100%;
+  flex:50%;
+  padding: 20px;
+  /* margin: 15px; */
+  display: flex;
+  flex-wrap: wrap;
+  /* border:1px solid black; */
+  /* flex-direction: column; */
+  /* align-content: space-between; */
+  /* gap:10px; */
+}
+.rowContent{
+  flex:100%;
+  /* padding: 10px; */
+}
+#header{
+  font-size: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+#title{
+  font-size: 1.3rem;
+  font-family: "Fraunces",sans-serif ;
+  font-weight:600;
+}
+#descr{
+  font-size: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+#price{
+  display: flex;
+  gap:10px;
+  align-items: center;
+  font-family: "Fraunces",sans-serif ;
+}
+#costo1{
+  font-size: 1.5rem;
+  color: #3C826A;
+  font-weight: 600;
+}
+#costo2{
+  text-decoration: line-through;
+  font-size: 0.85rem;
+}
+#cart{
+  display: flex;
+}
+button{
+  flex:100%;
+  background-color: #3C826A;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-family: "Fraunces",sans-serif ;
+}
+
+@media(max-width: 375px){
+/* @media(width <=375px){ */
+  .card {
+    flex-direction: column;
+    border-radius: 15px 15px 0 0;
+    height: 100%;
+  }
+  #portada
+  {
+    
+    flex: 100%;
+    background-image: url("./../images/image-product-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+  }
+  #content{
+    background-color: #d2e0db;
+    flex: 100%;
+  }
+  #title{
+    font-size: 1.5rem;
+  }
+  #descr{
+    font-size: 0.9rem;
+  }
+}

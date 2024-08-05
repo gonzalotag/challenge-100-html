@@ -1,0 +1,82 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 14
+2. Variables ............. 19
+3. Estilos generales ..... 35
+-------------------- 
+*/
+
+/* ----- Fuente ----- */
+/* @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@300;400;600&display=swap"); */
+
+/* ----- Variables ----- */
+/* :root {
+  --color: #181a1b; */
+
+  /* colores primarios */
+  /* --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%); */
+
+  /* colores neutrales */
+  /* --very-dark-blue-main: hsl(217, 54%, 11%);
+  --very-dark-blue-card: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%); */
+
+  /* config. */
+  /* --fuente: "Merriweather", sans-serif;
+  --ft-size: 1rem;
+  --l-height: 22px;
+} */
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+/* body {
+  font-family: var(--fuente);
+  background: linear-gradient(to right, #fffdcd, #a3e6ff);
+  color: var(--color);
+} */
+body {
+  background-color: #D5E1EF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Outfit', sans-serif;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+.qr-code {
+  background-size: cover;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin: 0 auto 20px auto;
+}
+
+.qr-code img{
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+h2 {
+  color: #1f2937;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #7b818d;
+  line-height: 1.5;
+}
