@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 10px;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+}
+.previewStats{
+    width: 100%;
+    padding: 20px;
+}
+.tarjeta{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.tarjeta1{
+    background-color: hsl(31, 77%, 52%);
+}
+.tarjeta2{
+    background-color: hsl(184, 100%, 22%);
+}
+.tarjeta3{
+    background-color: hsl(179, 100%, 13%);
+}
+.title{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Big Shoulders Display",sans-serif;
+    padding: 20px 0;
+}
+.tarjeta >p{
+    padding-bottom: 20px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Lexend Deca",sans-serif;
+    font-size: 1rem;
+}
+.linkActive {
+    padding: 20px;
+    background-color: white;
+    width: 75%;
+    text-align: center;
+    border-radius: 30px;
+}
+.linkActive a{
+    text-decoration: none;
+    
+    font-size: 1rem;
+    font-family: "Lexend Deca",sans-serif;
+}
+.linkActive:hover {
+    
+    /* border-color: white; */
+    outline: 2px solid white;
+}
+#activesedan:hover {
+    background-color: hsl(31, 77%, 52%);
+    
+}
+#activesedan:hover a{
+    color: white;
+}
+#activesuv:hover {
+    background-color: hsl(184, 100%, 22%);
+}
+#activesuv:hover a{
+    color: white;
+}
+#activelux:hover {
+    background-color:hsl(179, 100%, 13%);
+}
+#activelux:hover a{
+    color: white;
+}
+
+#ancorSedan{
+    color:hsl(31, 77%, 52%);
+    
+}
+#ancorSUV{
+    color: hsl(184, 100%, 22%);
+}
+#ancorLux{
+    color:hsl(179, 100%, 13%);
+}
+@media (width>376px) {
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .previewStats{
+        display:flex;
+        padding: 0;
+        width: 800px;
+        
+    }
+    .linkActive{
+        width: 100%;
+    }
+    
+}
