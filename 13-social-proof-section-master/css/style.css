@@ -1,0 +1,173 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* height: 100vh; */
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+}
+#main-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: "League Spartan", sans-serif;
+}
+#text-points-container{
+    width: 100%;
+}
+#text-container{
+    text-align: center;
+}
+#presentation{
+    font-size: 2rem;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+#speach{
+    font-size: 1.5rem;
+    color: hsl(303, 10%, 53%);
+    padding-bottom: 20px;
+}
+.points-container{
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 15px; */
+}
+.rate-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.rate-container p{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+.stars-container{
+    padding-bottom: 20px;
+}
+#feedback-container{
+    width: 100%;
+
+}
+.personal-feedback{
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 15px;
+    padding: 40px;
+    margin-top: 20px;   
+}
+.user-feedback{
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.user-feedback img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.feedback-header-container{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    /* align-items: center; */
+}
+.feedback-name{
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.feedback-status{
+    color: hsl(333, 80%, 67%);
+}
+.personal-feedback >p{
+    color: hsl(303, 10%, 53%);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+@media (width > 375px) {
+    body{
+        height: 100vh;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url("../images/bg-pattern-top-desktop.svg") top left no-repeat, url("../images/bg-pattern-bottom-desktop.svg") bottom right no-repeat;
+        background-repeat: no-repeat;
+    }
+    
+    #main-container{
+        width: 80%;
+    }
+    #text-points-container{
+        display: flex;
+        
+    }
+    #text-container{
+        width: 50%;
+        padding-right: 100px;
+        text-align: left;
+    }
+    #speach{
+        font-size: 1rem;
+    }
+    .points-container{
+        width: 50%;
+    }
+    .rate-container{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .stars-container{
+        padding-right: 20px;
+        padding-bottom: 0;
+    }
+    .rate-container p{
+        font-size: 1rem;
+    }
+    #rate-container1{
+        align-self: flex-start;
+    }
+    #rate-container2{
+        align-self:center;
+    }
+    #rate-container3{
+        align-self: flex-end;
+    }
+    #feedbacks-container{
+        display: flex;
+        height: 320px;
+        gap: 20px;
+    }
+    .personal-feedback{
+        height: 90%;
+        margin: 0;
+
+    }
+    #personal-feedback2{
+        align-self: center;
+    }
+    #personal-feedback3{
+        align-self: flex-end;
+    }
+}
